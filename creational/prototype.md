@@ -18,9 +18,15 @@ Implement the `clone` method in the prototype interface.
 ## Structure
 
 1. Interface `Prototype` declares a method for cloning itself.
+2. Concrete Prototype implements the cloning method.
+3. SubclassPrototype overrides the cloning method to implement a deep copy.
 
 ## Cons
 1. cloning complex objects that have circular references can be tricky.
 
 
 ## Example Code
+
+JS has Object.create() which can be used to clone objects.
+
+```
